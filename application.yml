@@ -5,3 +5,9 @@ oauth:
     
 jwt:
   secret: MY-JWT-SECRET
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
