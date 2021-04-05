@@ -6,9 +6,9 @@ zuul:
     user:
       service-id: "user"
       path: "/user/**"
-    authorization:
-      service-id: "authorization"
-      path: "/authorization/**"
+    oauth:
+      service-id: "oauth"
+      path: "/oauth/**"
 
 hystrix:
   command:
