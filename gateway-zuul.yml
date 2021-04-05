@@ -6,6 +6,7 @@ zuul:
     user:
       service-id: "user"
       path: "/user/**"
+      sensitive-headers: Cookie,Set-Cookie
     oauth:
       service-id: "oauth"
       path: "/oauth/**"
