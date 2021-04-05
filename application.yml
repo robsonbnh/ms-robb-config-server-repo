@@ -5,17 +5,16 @@ info:
     version: "@project.version@"
 
 oauth:
-  client:
-    name: myappname123
-    secret: myappsecret123
+  clientName: myappname123
+  clientSecret: myappsecret123
+
+jwt:
+  secret: MY-JWT-SECRET
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
-jwt:
-  secret: MY-JWT-SECRET
 
 management:
   endpoints:

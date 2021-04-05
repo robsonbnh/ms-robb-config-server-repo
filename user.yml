@@ -1,27 +1,6 @@
 server:
   port: ${PORT:0}
 
-
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/ms_user
-    username: root
-    password: root
-    platform: postgres
-    driver-class-name: org.postgresql.Driver
-    sql-script-encoding: UTF-8
-  jpa:
-    database: POSTGRESQL
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        default_schema: ms_user
-        jdbc:
-          lob:
-            non_contextual_creation: true
-      dialect: org.hibernate.dialect.PostgreSQLDialect
