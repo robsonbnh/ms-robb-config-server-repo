@@ -9,7 +9,7 @@ zuul:
     auth:
       service-id: "auth"
       path: "/auth/**"
-      sensitive-headers: Cookie,Set-Cookie,Authorization
+      sensitive-headers: Cookie,Set-Cookie
 
 hystrix:
   command:
