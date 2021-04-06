@@ -6,9 +6,9 @@ zuul:
     user:
       service-id: "user"
       path: "/user/**"
-    oauth:
-      service-id: "oauth"
-      path: "/oauth/**"
+    auth:
+      service-id: "auth"
+      path: "/auth/**"
       sensitive-headers: Cookie, Set-Cookie
 
 hystrix:
